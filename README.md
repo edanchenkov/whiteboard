@@ -14,11 +14,15 @@ Whiteboard real-time web app
 
 - Node.js v0.10 or higher
 
-``` brew install node```
+```bash
+$ brew install node
+```
 
 - Coffeescript
 
-``` sudo npm install -g coffee-script ```
+```bash
+$ sudo npm install -g coffee-script
+```
 
 
 #### Build and run
@@ -30,5 +34,4 @@ $ git cd whiteboard
 $ npm install
 
 $ coffee app.coffee
-
 ```
