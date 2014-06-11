@@ -10,17 +10,6 @@ require('zappajs') ->
   @get '/' : (req, res) ->
     @render 'index',  users : usersArr, canvas: JSON.stringify(canvas)
 
-  # @on 'connection' : ->
-  #   @
-    # console.dir(@socket[usersArr[0].id])
-    # if usersArr.length > 0
-    #   # Ask firstuser for canvas
-    #   # Ugly solution
-    #   # TODO replace
-    #   # @socket.sockets[usersArr[0].id].emit('askForCanvas', {data:null})
-    #   console.dir(@sockets)
-
-
   @on 'disconnect' : () ->
     users = []
     users = usersArr.filter (user) => user.id isnt @id
@@ -37,7 +26,5 @@ require('zappajs') ->
 
    @on 'save' : (data) ->
     canvas = data.canvas
-    # console.dir(data)
-    # @broadcast 'whiteboard': data
 
 
