@@ -1,0 +1,29 @@
+.modal.fade#welcome-modal
+  .modal-dialog
+    .modal-content
+      .modal-header
+        h4.modal-title Welcome!
+      .modal-body
+        if users.length === 0
+          p Nobody is here, be the first one!
+        
+        if users.length === 1
+          p Only #{users.length} is working.
+
+        if users.length > 1
+          p #{users.length} are here, join them.
+
+        .form-group
+          label(for='name') Name :
+          input#form-name.form-control(type='text', placeholder='Name')
+        .form-group
+          label(for='color') Line color : 
+          br
+          select#from-color-pick
+            option(value="red") Red
+            option(value="black") Black
+            option(value="blue") Blue
+            option(value="green") Green
+            option(value="yellow") Yellow
+      .modal-footer
+        button.btn.btn-primary#btn-login(type='button', disabled='disabled') Go!

@@ -1,0 +1,7 @@
+{
+  "name": "whiteboard",
+  "dependencies": {
+    "zappajs": "~0.4.22",
+    "jade": "~1.3.1"
+  }
+}
