@@ -28,8 +28,4 @@ socket.on('whiteboard', function(data){
   draw(data.x, data.y, data.oldx, data.oldy, data.color);
 })
 
-socket.on('askForCanvas', function(id){
-  console.dir('hello')
-})
-
 
