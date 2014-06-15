@@ -30,7 +30,7 @@ $ sudo npm install -g coffee-script
 ```bash
 
 $ git clone git@github.com:edanchenkov/whiteboard.git
-$ git cd whiteboard
+$ cd whiteboard
 $ npm install
 
 $ coffee app.coffee
